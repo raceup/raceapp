@@ -21,9 +21,5 @@ The [github issue tracker](https://github.com/raceup/raceapp/issues) is **only**
 [Fork](https://github.com/raceup/raceapp/fork) | Patch | Push | [Pull request](https://github.com/raceup/raceapp/pulls)
 
 
-## Thanks
-Thanks to anyone who ever loved this awesome project. 
-
-
 ## License
 [Apache License](http://www.apache.org/licenses/LICENSE-2.0) Version 2.0, January 2004
