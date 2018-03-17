@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2017 Race UP Electric Division
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/races_title">
+        <menu>
+            <item
+                android:id="@+id/nav_race_standings"
+                android:icon="@drawable/ic_assistant_photo_black_24dp"
+                android:title="@string/drawer_race_standings" />
+
+            <item
+                android:id="@+id/nav_race_conditions"
+                android:icon="@drawable/ic_explore_black_24dp"
+                android:title="@string/drawer_race_conditions" />
+        </menu>
+    </item>
+
+    <item android:title="@string/telemetry_title">
+        <menu>
+            <item
+                android:id="@+id/nav_real_time"
+                android:icon="@drawable/ic_timer_black_24dp"
+                android:title="@string/drawer_menu_real_time_data" />
+
+            <item
+                android:id="@+id/nav_cached"
+                android:icon="@drawable/ic_tab_black_24dp"
+                android:title="@string/drawer_menu_cached_data" />
+
+            <item
+                android:id="@+id/nav_alerts"
+                android:icon="@drawable/ic_warning_black_24dp"
+                android:title="@string/drawer_menu_alerts" />
+        </menu>
+    </item>
+
+    <item android:title="@string/extra_title">
+        <menu>
+            <item
+                android:id="@+id/nav_webpage"
+                android:icon="@drawable/ic_web_black_24dp"
+                android:title="@string/action_webpage" />
+
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/action_settings" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/action_share" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="@string/drawer_menu_about" />
+        </menu>
+    </item>
+
+</menu>

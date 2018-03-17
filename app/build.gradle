@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Race Up
+ * Copyright 2018 Race UP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,4 +41,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.github.clans:fab:1.6.4'
 }

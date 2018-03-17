@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2018 Race Up
+  ~ Copyright 2018 Race UP
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="it.raceup.raceapp.LoginActivity">
+    tools:context="it.raceup.raceapp.activity.LoginActivity">
 
     <!-- Login progress -->
     <ProgressBar

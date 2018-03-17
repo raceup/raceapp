@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright 2018 Race Up
+  ~ Copyright 2018 Race UP
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -15,7 +15,30 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#435BAB</color>  <!-- brochure cube blue -->
+    <color name="colorPrimaryDark">#2E3636</color>  <!-- brochure cube grey -->
+    <color name="colorAccent">#B20029</color>  <!-- brochure cube red light -->
+
+    <!-- raceup brochure -->
+    <color name="raceupBrochureBackgroundGrey">#ACACAC</color>
+    <color name="raceupBrochureCubeBlack">#2E3636</color>
+    <color name="raceupBrochureCubeBlue">#435BAB</color>
+    <color name="raceupBrochureCubeGrey">#909196</color>
+    <color name="raceupBrochureCubeRedLight">#B20029</color>
+    <color name="raceupBrochureCubeRedDark">#4E071E</color>
+
+    <!-- raceup cars -->
+    <color name="raceupCarEd">#0023ff</color>
+    <color name="raceupCarEdLight">#112399</color>
+    <color name="raceupCarCd">#fb2323</color>
+    <color name="raceupCarCdLight">#bb2323</color>
+
+    <!-- unipd -->
+    <color name="unipd">#9b0014</color>
+    <color name="unipdDark">#790011</color>
+
+    <!-- misc -->
+    <color name="grey_0">#c7c7c7</color>
+    <color name="grey_3">#6D6D6D</color>
+    <color name="grey_4">#615f5f</color>
 </resources>

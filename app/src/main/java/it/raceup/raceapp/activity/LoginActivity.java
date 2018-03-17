@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Race Up
+ * Copyright 2018 Race UP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package it.raceup.raceapp;
+package it.raceup.raceapp.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -46,6 +46,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import it.raceup.raceapp.R;
+
 import static android.Manifest.permission.READ_CONTACTS;
 
 /**
@@ -63,7 +65,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "foo@example.com:hello", "bar@example.com:world"
+            "chiara@raceup.it:chiara", "eleonora@raceup.it:eleonora"
     };
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
