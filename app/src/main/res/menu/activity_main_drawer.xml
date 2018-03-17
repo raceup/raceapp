@@ -16,36 +16,12 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="@string/races_title">
-        <menu>
-            <item
-                android:id="@+id/nav_race_standings"
-                android:icon="@drawable/ic_assistant_photo_black_24dp"
-                android:title="@string/drawer_race_standings" />
-
-            <item
-                android:id="@+id/nav_race_conditions"
-                android:icon="@drawable/ic_explore_black_24dp"
-                android:title="@string/drawer_race_conditions" />
-        </menu>
-    </item>
-
     <item android:title="@string/telemetry_title">
         <menu>
             <item
                 android:id="@+id/nav_real_time"
                 android:icon="@drawable/ic_timer_black_24dp"
                 android:title="@string/drawer_menu_real_time_data" />
-
-            <item
-                android:id="@+id/nav_cached"
-                android:icon="@drawable/ic_tab_black_24dp"
-                android:title="@string/drawer_menu_cached_data" />
-
-            <item
-                android:id="@+id/nav_alerts"
-                android:icon="@drawable/ic_warning_black_24dp"
-                android:title="@string/drawer_menu_alerts" />
         </menu>
     </item>
 

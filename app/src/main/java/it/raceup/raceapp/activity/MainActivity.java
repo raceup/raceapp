@@ -101,16 +101,8 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_race_standings) {
-            openRaceStandingsActivity();
-        } else if (id == R.id.nav_race_conditions) {
-            openRaceConditionsActivity();
-        } else if (id == R.id.nav_real_time) {
+        if (id == R.id.nav_real_time) {
             openRealTimeTelemetryActivity();
-        } else if (id == R.id.nav_cached) {
-            openCachedDataTelemetryActivity();
-        } else if (id == R.id.nav_alerts) {
-            openAlertsActivity();
         } else if (id == R.id.nav_webpage) {
             openWebpage("http://www.raceup.it");
         } else if (id == R.id.nav_manage) {
@@ -126,28 +118,8 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void openRaceStandingsActivity() {
-        /*Intent openActivity = new Intent(MainActivity.this, RaceStandingsActivity.class);
-        startActivity(openActivity);*/
-    }
-
-    private void openRaceConditionsActivity() {
-        /*Intent openActivity = new Intent(MainActivity.this, RaceConditionsActivity.class);
-        startActivity(openActivity);*/
-    }
-
     private void openRealTimeTelemetryActivity() {
         /*Intent openActivity = new Intent(MainActivity.this, RealTimeTelemetryActivity.class);
-        startActivity(openActivity);*/
-    }
-
-    private void openCachedDataTelemetryActivity() {
-        /*Intent openActivity = new Intent(MainActivity.this, CachedDataTelemetryActivity.class);
-        startActivity(openActivity);*/
-    }
-
-    private void openAlertsActivity() {
-        /*Intent openActivity = new Intent(MainActivity.this, AlertsActivity.class);
         startActivity(openActivity);*/
     }
 
@@ -160,8 +132,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void openSettingsActivity() {
-        /*Intent openActivity = new Intent(MainActivity.this, SettingsActivity.class);
-        startActivity(openActivity);*/
+        Intent openActivity = new Intent(MainActivity.this, SettingsActivity.class);
+        startActivity(openActivity);
     }
 
     private void openShareActivity() {
