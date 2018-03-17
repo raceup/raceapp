@@ -279,4 +279,5 @@
     <string name="logged_user">Mr. Awesome Engineer</string>
     <string name="logged_email">awesome@raceup.it</string>
     <string name="navbar_header_description">Navigation bar header</string>
+    <string name="title_activity_profile">ProfileActivity</string>
 </resources>

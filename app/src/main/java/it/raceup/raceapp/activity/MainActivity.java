@@ -103,6 +103,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_real_time) {
             openRealTimeTelemetryActivity();
+        } else if (id == R.id.nav_profile) {
+            //
         } else if (id == R.id.nav_webpage) {
             openWebpage("http://www.raceup.it");
         } else if (id == R.id.nav_manage) {
@@ -119,8 +121,11 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void openRealTimeTelemetryActivity() {
-        Intent openActivity = new Intent(MainActivity.this, RealTimeTelemetryActivity.class);
-        startActivity(openActivity);
+        openActivityByClass(RealTimeTelemetryActivity.class);
+    }
+
+    private void openProfileActivity() {
+        openActivityByClass(ProfileActivity.class);
     }
 
     private void openWebpage(String url) {
@@ -132,8 +137,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void openSettingsActivity() {
-        Intent openActivity = new Intent(MainActivity.this, SettingsActivity.class);
-        startActivity(openActivity);
+        openActivityByClass(SettingsActivity.class);
     }
 
     private void openShareActivity() {
@@ -143,6 +147,11 @@ public class MainActivity extends AppCompatActivity
                 "Download it from here: https://github.com/raceup/raceapp/blob/master/app/build/outputs/apk/app-debug.apk?raw=true");
         sendIntent.setType("text/plain");
         startActivity(sendIntent);
+    }
+
+    public void openActivityByClass(Class activityClass) {
+        Intent openActivity = new Intent(MainActivity.this, activityClass);
+        startActivity(openActivity);
     }
 
     private void openAboutDialog() {

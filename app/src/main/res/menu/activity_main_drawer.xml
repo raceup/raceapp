@@ -25,6 +25,15 @@
         </menu>
     </item>
 
+    <item android:title="@string/title_activity_profile">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="@string/drawer_menu_real_time_data" />
+        </menu>
+    </item>
+
     <item android:title="@string/extra_title">
         <menu>
             <item
