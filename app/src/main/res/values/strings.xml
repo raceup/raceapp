@@ -285,4 +285,11 @@
     <string name="nav_profile_title">User</string>
     <string name="nav_profile">Profile</string>
     <string name="drawer_menu_profile">Profile</string>
+    <string name="title_activity_community">CommunityActivity</string>
+    <string name="title_activity_challenge">ChallengeActivity</string>
+    <string name="title_activity_training">TrainingActivity</string>
+    <string name="action_community">Community</string>
+    <string name="action_challenge">Challenges</string>
+    <string name="action_training">Training mode</string>
+    <string name="nav_competitions">Competitions</string>
 </resources>
