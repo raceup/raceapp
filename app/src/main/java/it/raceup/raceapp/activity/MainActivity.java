@@ -119,8 +119,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void openRealTimeTelemetryActivity() {
-        /*Intent openActivity = new Intent(MainActivity.this, RealTimeTelemetryActivity.class);
-        startActivity(openActivity);*/
+        Intent openActivity = new Intent(MainActivity.this, RealTimeTelemetryActivity.class);
+        startActivity(openActivity);
     }
 
     private void openWebpage(String url) {
