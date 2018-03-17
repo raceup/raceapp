@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_real_time) {
             openRealTimeTelemetryActivity();
         } else if (id == R.id.nav_profile) {
-            //
+            openProfileActivity();
         } else if (id == R.id.nav_webpage) {
             openWebpage("http://www.raceup.it");
         } else if (id == R.id.nav_manage) {

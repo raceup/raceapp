@@ -27,7 +27,7 @@
     <string name="drawer_menu_cached_data">Cached data</string>
     <string name="drawer_menu_alerts">Alerts</string>
     <string name="extra_title">More</string>
-    <string name="action_webpage">Go to webpage</string>
+    <string name="action_webpage">Visit website</string>
     <string name="action_settings">Settings</string>
     <string name="action_share">Share</string>
     <string name="drawer_menu_about">About</string>
@@ -280,4 +280,9 @@
     <string name="logged_email">awesome@raceup.it</string>
     <string name="navbar_header_description">Navigation bar header</string>
     <string name="title_activity_profile">ProfileActivity</string>
+
+    <!-- nav bar -->
+    <string name="nav_profile_title">User</string>
+    <string name="nav_profile">Profile</string>
+    <string name="drawer_menu_profile">Profile</string>
 </resources>
