@@ -269,6 +269,9 @@
     <string name="permission_rationale">Contacts permissions are needed for providing email completions.
     </string>
 
+    <!-- titles -->
+    <string name="career">Career</string>
+
     <!-- connection -->
     <string name="not_connected">Not connected</string>
 
@@ -278,6 +281,7 @@
     <string name="car_errors">16</string>
     <string name="logged_user">Mr. Awesome Engineer</string>
     <string name="logged_email">awesome@raceup.it</string>
+    <string name="user_org">Race UP</string>
     <string name="navbar_header_description">Navigation bar header</string>
     <string name="title_activity_profile">ProfileActivity</string>
 
@@ -292,4 +296,18 @@
     <string name="action_challenge">Challenges</string>
     <string name="action_training">Training mode</string>
     <string name="nav_competitions">Competitions</string>
+
+    <!-- user profile activity -->
+    <string name="home">Home</string>
+    <string name="workplace">Work</string>
+    <string name="user_phone_number">(123) 456–7890</string>
+    <string name="user_phone_number_1">(321) 654–0987</string>
+    <string name="user_email">email@server.com</string>
+    <string name="user_email_1">email_1@server.com</string>
+    <string name="user_address">202 Park Street, Los Angeles</string>
+    <string name="user_address_1">221B Baker Street, England</string>
+    <string name="action_send_sms">Send SMS</string>
+    <string name="action_send_email">Send email</string>
+    <string name="action_call">Make call</string>
+    <string name="action_remove_contact">Remove contact</string>
 </resources>
