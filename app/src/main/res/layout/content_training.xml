@@ -43,6 +43,7 @@
                 android:paddingTop="@dimen/appbar_padding_top">
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/monza_card"
                     android:layout_width="fill_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -91,6 +92,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/spa_card"
                     android:layout_width="fill_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -139,6 +141,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/hockenheim_card"
                     android:layout_width="fill_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -185,6 +188,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/monaco_card"
                     android:layout_width="fill_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -233,6 +237,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/silverstone_card"
                     android:layout_width="fill_parent"
                     android:layout_height="100dp"
 
@@ -281,6 +286,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/abudhabi_card"
                     android:layout_width="fill_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
