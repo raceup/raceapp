@@ -103,6 +103,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_real_time) {
             openRealTimeTelemetryActivity();
+        } else if (id == R.id.nav_community) {
+            openCommunityActivity();
         } else if (id == R.id.nav_profile) {
             openProfileActivity();
         } else if (id == R.id.nav_webpage) {
@@ -122,6 +124,10 @@ public class MainActivity extends AppCompatActivity
 
     private void openRealTimeTelemetryActivity() {
         openActivityByClass(RealTimeTelemetryActivity.class);
+    }
+
+    private void openCommunityActivity() {
+        openActivityByClass(CommunityActivity.class);
     }
 
     private void openProfileActivity() {

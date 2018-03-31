@@ -310,4 +310,8 @@
     <string name="action_send_email">Send email</string>
     <string name="action_call">Make call</string>
     <string name="action_remove_contact">Remove contact</string>
+
+    <!-- search box -->
+    <string name="action_voice_rec">Voice rec</string>
+    <string name="action_location">Location</string>
 </resources>
