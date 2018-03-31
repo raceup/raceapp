@@ -107,6 +107,8 @@ public class MainActivity extends AppCompatActivity
             openCommunityActivity();
         } else if (id == R.id.nav_profile) {
             openProfileActivity();
+        } else if (id == R.id.nav_training) {
+            openTrainingActivity();
         } else if (id == R.id.nav_webpage) {
             openWebpage("http://www.raceup.it");
         } else if (id == R.id.nav_manage) {
@@ -132,6 +134,10 @@ public class MainActivity extends AppCompatActivity
 
     private void openProfileActivity() {
         openActivityByClass(ProfileActivity.class);
+    }
+
+    private void openTrainingActivity() {
+        openActivityByClass(TrainingActivity.class);
     }
 
     private void openWebpage(String url) {

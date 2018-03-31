@@ -314,4 +314,24 @@
     <!-- search box -->
     <string name="action_voice_rec">Voice rec</string>
     <string name="action_location">Location</string>
+
+    <!-- training activity -->
+    <string name="train_title">Select race track</string>
+    <string name="monza_title">Autodromo Nazionale Monza</string>
+    <string name="monza_description">Monza, Italy</string>
+
+    <string name="spa_title">Circuit de Spa-Francorchamps</string>
+    <string name="spa_description">Spa-Francorchamps, Belgium</string>
+
+    <string name="abudhabi_title">Yas Marina Circuit</string>
+    <string name="abudhabi_description">Abu Dhabi, United Arab Emirates</string>
+
+    <string name="monaco_title">Circuit de Monaco</string>
+    <string name="monaco_description">Principauté de Monaco, Monte-Carlo</string>
+
+    <string name="hockenheim_title">Hockenheimring Baden-Württember</string>
+    <string name="hockenheim_description">Hockenheim, Germany</string>
+
+    <string name="silverstone_title">Silverstone Circuit</string>
+    <string name="silverstone_description">Northamptonshire, United Kingdom</string>
 </resources>
