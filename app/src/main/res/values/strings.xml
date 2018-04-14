@@ -316,6 +316,7 @@
     <string name="action_location">Location</string>
 
     <!-- training activity -->
+    <!-- circuits -->
     <string name="train_title">Select race track</string>
     <string name="monza_title">Autodromo Nazionale Monza</string>
     <string name="monza_description">Monza, Italy</string>
@@ -346,4 +347,5 @@
     <string name="silverstone_description">Northamptonshire, United Kingdom</string>
     <string name="silverstone_record_lap">1:30.621</string>
     <string name="silverstone_record_pilot">Lewis Hamilton</string>
+    <string name="title_activity_our_challenges">OurChallengesActivity</string>
 </resources>

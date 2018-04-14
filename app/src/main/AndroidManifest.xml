@@ -97,6 +97,10 @@
         <activity
             android:name=".activity.TrainingActivity"
             android:label="@string/title_activity_training"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.OurChallengesActivity"
+            android:label="@string/title_activity_our_challenges"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
