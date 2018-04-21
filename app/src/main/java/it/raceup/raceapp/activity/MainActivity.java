@@ -34,9 +34,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.github.clans.fab.FloatingActionButton;
 
 import it.raceup.raceapp.R;
 import it.raceup.raceapp.dialog.AboutDialog;
@@ -51,8 +48,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        setupFabActions();
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -195,41 +190,6 @@ public class MainActivity extends AppCompatActivity
         } catch (Exception e) {
             // todo get current view showToastMessage("Ooops! Cannot open the about dialog!");
         }
-    }
-
-    private void setupFabActions() {
-        FloatingActionButton fabMenuWifi = findViewById(R.id.fab_menu_wifi);
-        fabMenuWifi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showToastMessage(view, "Create telemetry choice Wi-Fi action");
-            }
-        });
-
-        FloatingActionButton fabMenuLogFile = findViewById(R.id.fab_menu_log_file);
-        fabMenuLogFile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showToastMessage(view, "Create telemetry choice .csv log file action");
-            }
-        });
-
-        FloatingActionButton fabMenuSendMessage = findViewById(R.id.fab_menu_message);
-        fabMenuSendMessage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("message/rfc822");
-                i.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@raceup.it"});
-                i.putExtra(Intent.EXTRA_SUBJECT, "Know more about our project");
-                i.putExtra(Intent.EXTRA_TEXT, "Hi Race UP ...");
-                try {
-                    startActivity(Intent.createChooser(i, "Send mail..."));
-                } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(MainActivity.this, "Sorry ... there are no email clients installed.", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
     }
 
     private void showToastMessage(View view, String message) {
