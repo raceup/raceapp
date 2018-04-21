@@ -284,6 +284,9 @@
     <string name="user_org">Race UP</string>
     <string name="navbar_header_description">Navigation bar header</string>
     <string name="title_activity_profile">ProfileActivity</string>
+    <string name="user_record_monza">1:42:899</string>
+    <string name="user_record_silverstone">2:01:271</string>
+    <string name="user_record_abudhabi">1:59:821</string>
 
     <!-- nav bar -->
     <string name="nav_profile_title">User</string>
