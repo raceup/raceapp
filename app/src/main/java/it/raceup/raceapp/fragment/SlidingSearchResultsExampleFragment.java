@@ -26,7 +26,6 @@ import java.util.List;
 import it.raceup.raceapp.R;
 import it.raceup.raceapp.adapter.SearchResultsListAdapter;
 import it.raceup.raceapp.data.ColorSuggestion;
-import it.raceup.raceapp.data.ColorWrapper;
 import it.raceup.raceapp.data.DataHelper;
 
 
@@ -107,33 +106,12 @@ public class SlidingSearchResultsExampleFragment extends BaseExampleFragment {
             public void onSuggestionClicked(final SearchSuggestion searchSuggestion) {
 
                 ColorSuggestion colorSuggestion = (ColorSuggestion) searchSuggestion;
-                DataHelper.findColors(getActivity(), colorSuggestion.getBody(),
-                        new DataHelper.OnFindColorsListener() {
-
-                            @Override
-                            public void onResults(List<ColorWrapper> results) {
-                                mSearchResultsAdapter.swapData(results);
-                            }
-
-                        });
-                Log.d(TAG, "onSuggestionClicked()");
-
                 mLastQuery = searchSuggestion.getBody();
             }
 
             @Override
             public void onSearchAction(String query) {
                 mLastQuery = query;
-
-                DataHelper.findColors(getActivity(), query,
-                        new DataHelper.OnFindColorsListener() {
-
-                            @Override
-                            public void onResults(List<ColorWrapper> results) {
-                                mSearchResultsAdapter.swapData(results);
-                            }
-
-                        });
                 Log.d(TAG, "onSearchAction()");
             }
         });

@@ -19,12 +19,6 @@ package it.raceup.raceapp.data;
 import android.content.Context;
 import android.widget.Filter;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -130,83 +124,6 @@ public class DataHelper {
             }
         }.filter(query);
 
-    }
-
-    public static void findColors(Context context, String query, final OnFindColorsListener listener) {
-        initColorWrapperList(context);
-
-        new Filter() {
-
-            @Override
-            protected FilterResults performFiltering(CharSequence constraint) {
-
-
-                List<ColorWrapper> suggestionList = new ArrayList<>();
-
-                if (!(constraint == null || constraint.length() == 0)) {
-
-                    for (ColorWrapper color : sColorWrappers) {
-                        if (color.getName().toUpperCase()
-                                .startsWith(constraint.toString().toUpperCase())) {
-
-                            suggestionList.add(color);
-                        }
-                    }
-
-                }
-
-                FilterResults results = new FilterResults();
-                results.values = suggestionList;
-                results.count = suggestionList.size();
-
-                return results;
-            }
-
-            @Override
-            protected void publishResults(CharSequence constraint, FilterResults results) {
-
-                if (listener != null) {
-                    listener.onResults((List<ColorWrapper>) results.values);
-                }
-            }
-        }.filter(query);
-
-    }
-
-    private static void initColorWrapperList(Context context) {
-
-        if (sColorWrappers.isEmpty()) {
-            String jsonString = loadJson(context);
-            sColorWrappers = deserializeColors(jsonString);
-        }
-    }
-
-    private static String loadJson(Context context) {
-
-        String jsonString;
-
-        try {
-            InputStream is = context.getAssets().open(COLORS_FILE_NAME);
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            jsonString = new String(buffer, "UTF-8");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-
-        return jsonString;
-    }
-
-    private static List<ColorWrapper> deserializeColors(String jsonString) {
-
-        Gson gson = new Gson();
-
-        Type collectionType = new TypeToken<List<ColorWrapper>>() {
-        }.getType();
-        return gson.fromJson(jsonString, collectionType);
     }
 
     public interface OnFindColorsListener {
