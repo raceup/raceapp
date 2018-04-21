@@ -67,6 +67,12 @@
     <string name="real_time_telemetry_fragment_temperatures_tyres_title">Tyres (°C)</string>
     <string name="title_activity_settings">Settings</string>
 
+    <!-- people -->
+    <string name="eleonora">Eleonora Milesi</string>
+    <string name="eleonora_spa">Milesi S.P.A</string>
+    <string name="jacopo">Jacopo Pregnolato</string>
+    <string name="jacopo_spa">Pregnolato S.P.A</string>
+
     <!-- cached-data telemetry activity -->
     <string name="cached_data_activity_title">Cached data</string>
 
@@ -271,6 +277,8 @@
 
     <!-- titles -->
     <string name="career">Career</string>
+    <string name="suggested_players">Suggested players</string>
+    <string name="recent_played">Recent players</string>
 
     <!-- connection -->
     <string name="not_connected">Not connected</string>

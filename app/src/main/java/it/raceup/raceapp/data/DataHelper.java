@@ -26,31 +26,11 @@ import java.util.Comparator;
 import java.util.List;
 
 public class DataHelper {
-
-    private static final String COLORS_FILE_NAME = "colors.json";
-
-    private static List<ColorWrapper> sColorWrappers = new ArrayList<>();
-
     private static List<ColorSuggestion> sColorSuggestions =
             new ArrayList<>(Arrays.asList(
-                    new ColorSuggestion("green"),
-                    new ColorSuggestion("blue"),
-                    new ColorSuggestion("pink"),
-                    new ColorSuggestion("purple"),
-                    new ColorSuggestion("brown"),
-                    new ColorSuggestion("gray"),
-                    new ColorSuggestion("Granny Smith Apple"),
-                    new ColorSuggestion("Indigo"),
-                    new ColorSuggestion("Periwinkle"),
-                    new ColorSuggestion("Mahogany"),
-                    new ColorSuggestion("Maize"),
-                    new ColorSuggestion("Mahogany"),
-                    new ColorSuggestion("Outer Space"),
-                    new ColorSuggestion("Melon"),
-                    new ColorSuggestion("Yellow"),
-                    new ColorSuggestion("Orange"),
-                    new ColorSuggestion("Red"),
-                    new ColorSuggestion("Orchid")));
+                    new ColorSuggestion("Eleonora Milesi"),
+                    new ColorSuggestion("Jacopo Pregnolato"),
+                    new ColorSuggestion("Felice Nappo")));
 
     public static List<ColorSuggestion> getHistory(Context context, int count) {
 
@@ -126,12 +106,7 @@ public class DataHelper {
 
     }
 
-    public interface OnFindColorsListener {
-        void onResults(List<ColorWrapper> results);
-    }
-
     public interface OnFindSuggestionsListener {
         void onResults(List<ColorSuggestion> results);
     }
-
 }
