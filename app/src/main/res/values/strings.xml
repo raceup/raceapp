@@ -72,15 +72,15 @@
     <string name="eleonora_spa">Milesi S.P.A</string>
     <string name="eleonora_age">22 years</string>
     <string name="eleonora_email">ele.milesi@raceup.it</string>
-    <string name="eleonora_career_record_monza">1:47.020 2nd</string>
-    <string name="eleonora_career_record_spa">2:17.020 4th</string>
+    <string name="eleonora_career_record_monza">Autodromo Nazionale Monza - 1:47.020 (2nd)</string>
+    <string name="eleonora_career_record_spa">Circuit de Spa-Francorchamps - 2:17.020 (4th)</string>
 
     <string name="jacopo">Jacopo Pregnolato</string>
     <string name="jacopo_spa">Pregnolato S.P.A</string>
     <string name="jacopo_age">20 years</string>
     <string name="jacopo_email">jac.pregnolato@raceup.it</string>
-    <string name="jacopo_career_record_monza">1:39.122 1st</string>
-    <string name="jacopo_career_record_spa">1:59.280 2nd</string>
+    <string name="jacopo_career_record_monza">Autodromo Nazionale Monza - 1:39.122 (1st)</string>
+    <string name="jacopo_career_record_spa">Circuit de Spa-Francorchamps - 1:59.280 (2nd)</string>
 
     <!-- cached-data telemetry activity -->
     <string name="cached_data_activity_title">Cached data</string>
@@ -369,7 +369,6 @@
     <string name="silverstone_record_pilot">Lewis Hamilton</string>
     <string name="title_activity_our_challenges">OurChallengesActivity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_challenge_player">ChallengePlayerActivity</string>
+    <string name="title_activity_challenge_player">Challenge a player</string>
+    <string name="start_challenge">CHALLENGE</string>
 </resources>

@@ -1,11 +1,12 @@
 package it.raceup.raceapp.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import it.raceup.raceapp.R;
 
@@ -25,11 +26,11 @@ public class ChallengePlayerActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+        Button fab = findViewById(R.id.start_challenge);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Challenge added!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -49,13 +50,22 @@ public class ChallengePlayerActivity extends AppCompatActivity {
     }
 
     protected void populate() {
-        System.out.println("--------------------- populating with "
-                + name + ", "
-                + industry + ", "
-                + age + ", "
-                + email + ", "
-                + record_0 + ", "
-                + record_1 + ".\n");
-        // todo set text fields with class data attrs
+        TextView textView = findViewById(R.id.text_name);
+        textView.setText(name);
+
+        textView = findViewById(R.id.text_age);
+        textView.setText(age);
+
+        textView = findViewById(R.id.text_spa);
+        textView.setText(industry);
+
+        textView = findViewById(R.id.text_email);
+        textView.setText(email);
+
+        textView = findViewById(R.id.text_record_0);
+        textView.setText(record_0);
+
+        textView = findViewById(R.id.text_record_1);
+        textView.setText(record_1);
     }
 }
