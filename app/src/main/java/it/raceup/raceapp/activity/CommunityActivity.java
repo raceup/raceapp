@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.arlib.floatingsearchview.FloatingSearchView;
 
@@ -14,7 +15,7 @@ import it.raceup.raceapp.fragment.BaseExampleFragment;
 import it.raceup.raceapp.fragment.SlidingSearchResultsExampleFragment;
 
 public class CommunityActivity extends AppCompatActivity
-        implements BaseExampleFragment.BaseExampleFragmentCallbacks {
+        implements BaseExampleFragment.BaseExampleFragmentCallbacks, View.OnClickListener {
     private DrawerLayout mDrawerLayout;
 
     @Override
@@ -23,7 +24,9 @@ public class CommunityActivity extends AppCompatActivity
         setContentView(R.layout.activity_community);
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
-        showFragment(new SlidingSearchResultsExampleFragment());
+        replaceFragment(new SlidingSearchResultsExampleFragment());
+
+
     }
 
     @Override
@@ -41,7 +44,24 @@ public class CommunityActivity extends AppCompatActivity
         }
     }
 
-    private void showFragment(Fragment fragment) {
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.card_eleonora:
+                replaceFragment(new AboutFragment());
+                break;
+
+            case R.id.card_jacopo:
+                replaceFragment(new PhoneBookFragment());
+                break;
+        }
+    }
+
+    protected void openPlayerFragment(String name, String industry, String age, String email, String record_0, String record_1) {
+        //
+    }
+
+    private void replaceFragment(Fragment fragment) {
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.fragment_container, fragment).commit();
