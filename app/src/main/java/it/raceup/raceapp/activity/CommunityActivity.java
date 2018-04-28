@@ -12,6 +12,7 @@ import java.util.List;
 
 import it.raceup.raceapp.R;
 import it.raceup.raceapp.fragment.BaseExampleFragment;
+import it.raceup.raceapp.fragment.ChallengePlayerFragment;
 import it.raceup.raceapp.fragment.SlidingSearchResultsExampleFragment;
 
 public class CommunityActivity extends AppCompatActivity
@@ -48,17 +49,39 @@ public class CommunityActivity extends AppCompatActivity
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.card_eleonora:
-                replaceFragment(new AboutFragment());
+                openPlayerFragment(
+                        getString(R.string.eleonora),
+                        getString(R.string.eleonora_spa),
+                        getString(R.string.eleonora_age),
+                        getString(R.string.eleonora_email),
+                        getString(R.string.eleonora_career_record_monza),
+                        getString(R.string.eleonora_career_record_spa)
+                );
                 break;
 
             case R.id.card_jacopo:
-                replaceFragment(new PhoneBookFragment());
+                openPlayerFragment(
+                        getString(R.string.jacopo),
+                        getString(R.string.jacopo_spa),
+                        getString(R.string.jacopo_age),
+                        getString(R.string.jacopo_email),
+                        getString(R.string.jacopo_career_record_monza),
+                        getString(R.string.jacopo_career_record_spa)
+                );
                 break;
         }
     }
 
     protected void openPlayerFragment(String name, String industry, String age, String email, String record_0, String record_1) {
-        //
+        ChallengePlayerFragment fragment = ChallengePlayerFragment.newInstance(
+                name,
+                industry,
+                age,
+                email,
+                record_0,
+                record_1
+        );  // create fragment
+        replaceFragment(fragment);  // make it visible
     }
 
     private void replaceFragment(Fragment fragment) {
