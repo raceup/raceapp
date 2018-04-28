@@ -314,7 +314,7 @@
     <string name="title_activity_training">Training arena</string>
     <string name="action_community">Community</string>
     <string name="action_challenge">Challenges</string>
-    <string name="action_training">Training mode</string>
+    <string name="action_training">Training arena</string>
     <string name="nav_competitions">Competitions</string>
 
     <!-- user profile activity -->
@@ -367,8 +367,9 @@
     <string name="silverstone_description">Northamptonshire, United Kingdom</string>
     <string name="silverstone_record_lap">1:30.621</string>
     <string name="silverstone_record_pilot">Lewis Hamilton</string>
-    <string name="title_activity_our_challenges">RaceUp Challenges</string>
 
+    <string name="title_activity_our_challenges">RaceUp Challenges</string>
     <string name="title_activity_challenge_player">Challenge a player</string>
     <string name="start_challenge">CHALLENGE</string>
+    <string name="title_activity_training_challenge">TrainingChallengeActivity</string>
 </resources>

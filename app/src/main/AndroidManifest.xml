@@ -111,6 +111,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="it.raceup.raceapp.activity.CommunityActivity" />
         </activity>
+        <activity
+            android:name=".activity.TrainingChallengeActivity"
+            android:label="@string/title_activity_training_challenge"
+            android:parentActivityName=".activity.TrainingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.raceup.raceapp.activity.TrainingActivity" />
+        </activity>
     </application>
 
 </manifest>
