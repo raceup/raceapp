@@ -101,7 +101,16 @@
         <activity
             android:name=".activity.OurChallengesActivity"
             android:label="@string/title_activity_our_challenges"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ChallengePlayerActivity"
+            android:label="@string/title_activity_challenge_player"
+            android:parentActivityName=".activity.CommunityActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.raceup.raceapp.activity.CommunityActivity" />
+        </activity>
     </application>
 
 </manifest>
