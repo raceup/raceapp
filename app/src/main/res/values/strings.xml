@@ -372,4 +372,6 @@
     <string name="title_activity_challenge_player">Challenge a player</string>
     <string name="start_challenge">CHALLENGE</string>
     <string name="title_activity_training_challenge">TrainingChallengeActivity</string>
+    <string name="start_challenge_invitation">SEND CHALLENGE</string>
+    <string name="start_challenge_now">CHALLENGE NOW</string>
 </resources>

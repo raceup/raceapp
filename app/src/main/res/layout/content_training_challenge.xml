@@ -38,10 +38,10 @@
                     android:text="Record time:" />
 
                 <TextView
+                    android:id="@+id/record_time"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="<time of record>" />
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -57,36 +57,36 @@
                     android:text="Registered by" />
 
                 <TextView
+                    android:id="@+id/record_driver"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="<driver of record>" />
+                    android:layout_weight="1" />
             </LinearLayout>
 
         </LinearLayout>
 
         <Button
-            android:id="@+id/challenge_your_time"
+            android:id="@+id/challenge_invitation"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_weight="0.5"
             android:background="@color/colorAccent"
-            android:text="@string/start_challenge"
+            android:text="@string/start_challenge_invitation"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/challenge_record"
+            android:id="@+id/challenge_now"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_weight="0.5"
             android:background="@color/colorAccent"
-            android:text="@string/start_challenge"
+            android:text="@string/start_challenge_now"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
             android:textStyle="bold" />

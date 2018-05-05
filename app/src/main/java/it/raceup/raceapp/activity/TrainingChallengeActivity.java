@@ -1,10 +1,15 @@
 package it.raceup.raceapp.activity;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.widget.ImageView;
+import android.view.View;
+import android.widget.DatePicker;
 import android.widget.TextView;
+
+import java.util.Calendar;
 
 import it.raceup.raceapp.R;
 
@@ -23,6 +28,10 @@ public class TrainingChallengeActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        getArgsFromBundle(getIntent().getExtras());
+        populate();
+        setButtonListeners();
     }
 
     protected void getArgsFromBundle(Bundle args) {
@@ -33,16 +42,59 @@ public class TrainingChallengeActivity extends AppCompatActivity {
     }
 
     protected void populate() {
-        TextView textView = findViewById(R.id.text_name);
+        TextView textView = findViewById(R.id.circuit);
         textView.setText(circuit);
 
-        textView = findViewById(R.id.text_age);
+        textView = findViewById(R.id.record_time);
         textView.setText(time);
 
-        textView = findViewById(R.id.text_spa);
+        textView = findViewById(R.id.record_driver);
         textView.setText(driver);
 
-        ImageView imageView = findViewById(R.id.imageView);
+        // todo add image ImageView imageView = findViewById(R.id.);
+        // imageView.setImageResource(mapId);
+    }
+
+    protected void setButtonListeners() {
+        final Calendar myCalendar = Calendar.getInstance();
+
+        final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                Snackbar.make(view, "Challenge added!", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+
+        };
+
+        findViewById(R.id.challenge_invitation).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new DatePickerDialog(
+                        TrainingChallengeActivity.this,
+                        date,
+                        myCalendar.get(Calendar.YEAR),
+                        myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)
+                ).show();
+            }
+        });
+
+        findViewById(R.id.challenge_now).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new DatePickerDialog(
+                        TrainingChallengeActivity.this,
+                        date,
+                        myCalendar.get(Calendar.YEAR),
+                        myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)
+                ).show();
+            }
+        });
     }
 
     private void openConfirmationActivity() {
