@@ -32,10 +32,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        String.valueOf(R.string.monza_title),
+                        getString(R.string.monza_title),
                         R.drawable.monza,
-                        String.valueOf(R.string.monza_record_lap),
-                        String.valueOf(R.string.monza_record_pilot)
+                        getString(R.string.monza_record_lap),
+                        getString(R.string.monza_record_pilot)
                 );
             }
         });
@@ -45,10 +45,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        String.valueOf(R.string.silverstone_title),
+                        getString(R.string.silverstone_title),
                         R.drawable.spa,
-                        String.valueOf(R.string.silverstone_record_lap),
-                        String.valueOf(R.string.silverstone_record_pilot)
+                        getString(R.string.silverstone_record_lap),
+                        getString(R.string.silverstone_record_pilot)
                 );
             }
         });
@@ -58,10 +58,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        String.valueOf(R.string.hockenheim_title),
+                        getString(R.string.hockenheim_title),
                         R.drawable.hockenheim,
-                        String.valueOf(R.string.hockenheim_record_lap),
-                        String.valueOf(R.string.hockenheim_record_pilot)
+                        getString(R.string.hockenheim_record_lap),
+                        getString(R.string.hockenheim_record_pilot)
                 );
             }
         });
@@ -71,10 +71,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        String.valueOf(R.string.monaco_title),
+                        getString(R.string.monaco_title),
                         R.drawable.monaco,
-                        String.valueOf(R.string.monaco_record_lap),
-                        String.valueOf(R.string.monaco_record_pilot)
+                        getString(R.string.monaco_record_lap),
+                        getString(R.string.monaco_record_pilot)
                 );
             }
         });
@@ -84,10 +84,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        String.valueOf(R.string.abudhabi_title),
+                        getString(R.string.abudhabi_title),
                         R.drawable.abudhabi,
-                        String.valueOf(R.string.abudhabi_record_lap),
-                        String.valueOf(R.string.abudhabi_record_pilot)
+                        getString(R.string.abudhabi_record_lap),
+                        getString(R.string.abudhabi_record_pilot)
                 );
             }
         });
@@ -97,10 +97,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        String.valueOf(R.string.spa_title),
+                        getString(R.string.spa_title),
                         R.drawable.spa,
-                        String.valueOf(R.string.spa_record_lap),
-                        String.valueOf(R.string.spa_record_pilot)
+                        getString(R.string.spa_record_lap),
+                        getString(R.string.spa_record_pilot)
                 );
             }
         });
@@ -110,7 +110,7 @@ TrainingActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TrainingChallengeActivity.class);
         Bundle extras = new Bundle();  // create bundle
         extras.putString(TrainingChallengeActivity.ARG_PARAM_CIRCUIT, circuit);
-        extras.putInt(TrainingChallengeActivity.ARG_PARAM_MAP, mapId);
+        // todo add map extras.putInt(TrainingChallengeActivity.ARG_PARAM_MAP, mapId);
         extras.putString(TrainingChallengeActivity.ARG_PARAM_RECORD_TIME, time);
         extras.putString(TrainingChallengeActivity.ARG_PARAM_RECORD_DRIVER, driver);
 

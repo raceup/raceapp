@@ -15,11 +15,9 @@ import it.raceup.raceapp.R;
 
 public class TrainingChallengeActivity extends AppCompatActivity {
     public static final String ARG_PARAM_CIRCUIT = "circuit";
-    public static final String ARG_PARAM_MAP = "map_id";
     public static final String ARG_PARAM_RECORD_TIME = "time";
     public static final String ARG_PARAM_RECORD_DRIVER = "driver";
     private String circuit, time, driver;
-    private int mapId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +34,6 @@ public class TrainingChallengeActivity extends AppCompatActivity {
 
     protected void getArgsFromBundle(Bundle args) {
         circuit = args.getString(ARG_PARAM_CIRCUIT);
-        mapId = args.getInt(ARG_PARAM_MAP);
         time = args.getString(ARG_PARAM_RECORD_TIME);
         driver = args.getString(ARG_PARAM_RECORD_DRIVER);
     }
@@ -50,9 +47,6 @@ public class TrainingChallengeActivity extends AppCompatActivity {
 
         textView = findViewById(R.id.record_driver);
         textView.setText(driver);
-
-        // todo add image ImageView imageView = findViewById(R.id.);
-        // imageView.setImageResource(mapId);
     }
 
     protected void setButtonListeners() {
