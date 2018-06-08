@@ -1,7 +1,7 @@
 package it.raceup.raceapp.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -26,12 +26,11 @@ public class ChallengePlayerActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button fab = findViewById(R.id.start_challenge);
-        fab.setOnClickListener(new View.OnClickListener() {
+        Button button = findViewById(R.id.start_challenge);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Challenge added!", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                openNewChallengeActivity();
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -67,5 +66,10 @@ public class ChallengePlayerActivity extends AppCompatActivity {
 
         textView = findViewById(R.id.text_record_1);
         textView.setText(record_1);
+    }
+
+    private void openNewChallengeActivity() {
+        Intent openActivity = new Intent(ChallengePlayerActivity.this, NewChallengeActivity.class);
+        startActivity(openActivity);
     }
 }

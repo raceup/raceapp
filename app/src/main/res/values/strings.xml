@@ -374,4 +374,5 @@
     <string name="title_activity_training_challenge">TrainingChallengeActivity</string>
     <string name="start_challenge_invitation">SEND CHALLENGE</string>
     <string name="start_challenge_now">CHALLENGE NOW</string>
+    <string name="title_activity_new_challenge">NewChallengeActivity</string>
 </resources>

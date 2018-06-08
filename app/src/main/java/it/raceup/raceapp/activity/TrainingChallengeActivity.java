@@ -64,40 +64,31 @@ public class TrainingChallengeActivity extends AppCompatActivity {
                 myCalendar.set(Calendar.YEAR, year);
                 myCalendar.set(Calendar.MONTH, monthOfYear);
                 myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                Snackbar.make(view, "Challenge added!", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
             }
-
+        };
+        View.OnClickListener dateListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new DatePickerDialog(
+                        TrainingChallengeActivity.this,
+                        date,
+                        myCalendar.get(Calendar.YEAR),
+                        myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)
+                ).show();
+            }
         };
 
-        findViewById(R.id.challenge_invitation).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new DatePickerDialog(
-                        TrainingChallengeActivity.this,
-                        date,
-                        myCalendar.get(Calendar.YEAR),
-                        myCalendar.get(Calendar.MONTH),
-                        myCalendar.get(Calendar.DAY_OF_MONTH)
-                ).show();
-            }
-        });
+        findViewById(R.id.challenge_invitation).setOnClickListener(dateListener);
 
-        findViewById(R.id.challenge_now).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new DatePickerDialog(
-                        TrainingChallengeActivity.this,
-                        date,
-                        myCalendar.get(Calendar.YEAR),
-                        myCalendar.get(Calendar.MONTH),
-                        myCalendar.get(Calendar.DAY_OF_MONTH)
-                ).show();
-            }
-        });
-    }
-
-    private void openConfirmationActivity() {
-        // todo create activity with confirmation dialog and loading bar
+        findViewById(R.id.challenge_now).setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Snackbar.make(v, "Challenge added!", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
+                }
+        );
     }
 }

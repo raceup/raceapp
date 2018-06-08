@@ -120,6 +120,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="it.raceup.raceapp.activity.TrainingActivity" />
         </activity>
+        <activity
+            android:name=".activity.NewChallengeActivity"
+            android:label="@string/title_activity_new_challenge"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

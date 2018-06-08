@@ -40,7 +40,6 @@ TrainingActivity extends AppCompatActivity {
             }
         });
 
-
         card = findViewById(R.id.silverstone_card);
         card.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +52,6 @@ TrainingActivity extends AppCompatActivity {
                 );
             }
         });
-
 
         card = findViewById(R.id.hockenheim_card);
         card.setOnClickListener(new View.OnClickListener() {
@@ -68,7 +66,6 @@ TrainingActivity extends AppCompatActivity {
             }
         });
 
-
         card = findViewById(R.id.monaco_card);
         card.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +79,6 @@ TrainingActivity extends AppCompatActivity {
             }
         });
 
-
         card = findViewById(R.id.abudhabi_card);
         card.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +91,6 @@ TrainingActivity extends AppCompatActivity {
                 );
             }
         });
-
 
         card = findViewById(R.id.spa_card);
         card.setOnClickListener(new View.OnClickListener() {
