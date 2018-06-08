@@ -22,9 +22,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import it.raceup.raceapp.R;
 import it.raceup.raceapp.utils.Utils;
+
+import static it.raceup.raceapp.utils.Utils.formatDecimals;
 
 /**
  * Fragment in RealTimeTelemetry activity to show info about telemetry
@@ -58,7 +61,25 @@ public class RealTimeTelemetryTemperaturesFragment extends Fragment {
     }
 
     private void updateTemperatures() {
-        double[] engines = Utils.randomsInRange(90, 100, 2);
+        double[] engines = Utils.randomsInRange(250, 270, 2);
         double[] tyres = Utils.randomsInRange(90, 100, 4);
+
+        TextView view = getActivity().findViewById(R.id.engines_value_0);
+        view.setText(formatDecimals(engines[0]));
+
+        view = getActivity().findViewById(R.id.engines_value_1);
+        view.setText(formatDecimals(engines[1]));
+
+        view = getActivity().findViewById(R.id.tyres_value_fl);
+        view.setText(formatDecimals(tyres[0]));
+
+        view = getActivity().findViewById(R.id.tyres_value_fr);
+        view.setText(formatDecimals(tyres[1]));
+
+        view = getActivity().findViewById(R.id.tyres_value_rl);
+        view.setText(formatDecimals(tyres[2]));
+
+        view = getActivity().findViewById(R.id.tyres_value_rr);
+        view.setText(formatDecimals(tyres[3]));
     }
 }
