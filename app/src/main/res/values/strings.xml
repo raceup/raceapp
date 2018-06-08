@@ -375,4 +375,5 @@
     <string name="start_challenge_invitation">SEND CHALLENGE</string>
     <string name="start_challenge_now">CHALLENGE NOW</string>
     <string name="title_activity_new_challenge">Select challenge</string>
+    <string name="title_activity_help">HelpActivity</string>
 </resources>

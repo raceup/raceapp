@@ -110,12 +110,24 @@
 
         <!-- steering wheel angle -->
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:text="@string/steering_wheel_angle" />
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/steering_wheel_angle" />
+
+            <ImageButton
+                android:id="@+id/ImageButton01"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:src="@drawable/ic_alert_octagram_black_24dp" />
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/img_steering_wheel"
