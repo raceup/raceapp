@@ -17,18 +17,21 @@
 package it.raceup.raceapp.fragment;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import it.raceup.raceapp.R;
+import it.raceup.raceapp.utils.Utils;
 
 /**
  * Fragment in RealTimeTelemetry activity to show info about telemetry
  */
 public class RealTimeTelemetryTemperaturesFragment extends Fragment {
     private static final String TAG = "RealTimeTelemetryTemperaturesFragment";
+    final Handler handler = new Handler();
     private View mFragmentView;
 
     public RealTimeTelemetryTemperaturesFragment() {
@@ -42,6 +45,20 @@ public class RealTimeTelemetryTemperaturesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mFragmentView = inflater.inflate(R.layout.fragment_real_time_telemetry_temperatures, container, false);
+
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                updateTemperatures();
+                handler.postDelayed(this, 500); // set time here to refresh textView
+            }
+        });
+
         return mFragmentView;
+    }
+
+    private void updateTemperatures() {
+        double[] engines = Utils.randomsInRange(90, 100, 2);
+        double[] tyres = Utils.randomsInRange(90, 100, 4);
     }
 }
