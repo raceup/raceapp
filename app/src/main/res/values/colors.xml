@@ -15,9 +15,9 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#435BAB</color>  <!-- brochure cube blue -->
-    <color name="colorPrimaryDark">#2E3636</color>  <!-- brochure cube grey -->
-    <color name="colorAccent">#B20029</color>  <!-- brochure cube red light -->
+    <color name="colorPrimary">#B20029</color>  <!-- brochure cube blue -->
+    <color name="colorPrimaryDark">#4E071E</color>  <!-- brochure cube grey -->
+    <color name="colorAccent">#9b0014</color>  <!-- brochure cube red light -->
 
     <!-- raceup brochure -->
     <color name="raceupBrochureBackgroundGrey">#ACACAC</color>

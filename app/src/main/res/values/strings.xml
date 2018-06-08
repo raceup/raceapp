@@ -69,14 +69,14 @@
 
     <!-- people -->
     <string name="eleonora">Eleonora Milesi</string>
-    <string name="eleonora_spa">Milesi S.P.A</string>
+    <string name="eleonora_spa">OZ Racing</string>
     <string name="eleonora_age">22 years</string>
     <string name="eleonora_email">ele.milesi@raceup.it</string>
     <string name="eleonora_career_record_monza">Autodromo Nazionale Monza - 1:47.020 (2nd)</string>
     <string name="eleonora_career_record_spa">Circuit de Spa-Francorchamps - 2:17.020 (4th)</string>
 
     <string name="jacopo">Jacopo Pregnolato</string>
-    <string name="jacopo_spa">Pregnolato S.P.A</string>
+    <string name="jacopo_spa">OZ Racing</string>
     <string name="jacopo_age">20 years</string>
     <string name="jacopo_email">jac.pregnolato@raceup.it</string>
     <string name="jacopo_career_record_monza">Autodromo Nazionale Monza - 1:39.122 (1st)</string>
@@ -110,7 +110,7 @@
                 based on your message history
             </string>
     <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">Mario Rossi</string>
+    <string name="pref_default_display_name">Chiara Vettel</string>
     <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
     <string-array name="pref_example_list_titles">
         <item>Always</item>
@@ -287,7 +287,7 @@
     <!-- titles -->
     <string name="career">Career</string>
     <string name="suggested_players">Suggested players</string>
-    <string name="recent_played">Recent players</string>
+    <string name="recent_played">Suggested players</string>
 
     <!-- connection -->
     <string name="not_connected">Not connected</string>
@@ -296,11 +296,11 @@
     <string name="packet_loss_rate">5.6%</string>
     <string name="good_car_status">Good</string>
     <string name="car_errors">16</string>
-    <string name="logged_user">Mr. Awesome Engineer</string>
-    <string name="logged_email">awesome@raceup.it</string>
+    <string name="logged_user">Mss. Chiara Vilnai</string>
+    <string name="logged_email">chiara@raceup.it</string>
     <string name="user_org">Race UP</string>
     <string name="navbar_header_description">Navigation bar header</string>
-    <string name="title_activity_profile">My personal data</string>
+    <string name="title_activity_profile">Profile</string>
     <string name="user_record_monza">1:42:899</string>
     <string name="user_record_silverstone">2:01:271</string>
     <string name="user_record_abudhabi">1:59:821</string>
@@ -320,11 +320,11 @@
     <!-- user profile activity -->
     <string name="home">Home</string>
     <string name="workplace">Work</string>
-    <string name="user_phone_number">(123) 456–7890</string>
-    <string name="user_phone_number_1">(321) 654–0987</string>
+    <string name="user_phone_number">(39) 445–7890</string>
+    <string name="user_phone_number_1">(39) 781–0987</string>
     <string name="user_email">email@server.com</string>
     <string name="user_email_1">email_1@server.com</string>
-    <string name="user_address">202 Park Street, Los Angeles</string>
+    <string name="user_address">202 Park Street, Vettel Arena</string>
     <string name="user_address_1">221B Baker Street, England</string>
     <string name="action_send_sms">Send SMS</string>
     <string name="action_send_email">Send email</string>

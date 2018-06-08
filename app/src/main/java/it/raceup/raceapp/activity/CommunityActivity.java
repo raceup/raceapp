@@ -52,8 +52,8 @@ public class CommunityActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 openPlayerActivity(
-                        getString(R.string.eleonora),
-                        getString(R.string.eleonora_spa),
+                        getString(R.string.eleonora), R.drawable.eleonoramilesi,
+                        getString(R.string.eleonora_spa), R.drawable.oz,
                         getString(R.string.eleonora_age),
                         getString(R.string.eleonora_email),
                         getString(R.string.eleonora_career_record_monza),
@@ -67,8 +67,8 @@ public class CommunityActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 openPlayerActivity(
-                        getString(R.string.jacopo),
-                        getString(R.string.jacopo_spa),
+                        getString(R.string.jacopo), R.drawable.jacopopregnolato,
+                        getString(R.string.jacopo_spa), R.drawable.oz,
                         getString(R.string.jacopo_age),
                         getString(R.string.jacopo_email),
                         getString(R.string.jacopo_career_record_monza),
@@ -78,12 +78,16 @@ public class CommunityActivity extends AppCompatActivity
         });
     }
 
-    protected void openPlayerActivity(String name, String industry, String age, String email, String record_0, String record_1) {
+    protected void openPlayerActivity(String name, int profileImage, String industry,
+                                      int businessImage, String age, String email,
+                                      String record_0, String record_1) {
         Intent intent = new Intent(this, ChallengePlayerActivity.class);
 
         Bundle extras = new Bundle();  // create bundle
         extras.putString(ChallengePlayerActivity.ARG_PARAM_NAME, name);
+        extras.putInt(ChallengePlayerActivity.ARG_PARAM_NAME_IMAGE, profileImage);
         extras.putString(ChallengePlayerActivity.ARG_PARAM_INDUSTRY, industry);
+        extras.putInt(ChallengePlayerActivity.ARG_PARAM_INDUSTRY_IMAGE, businessImage);
         extras.putString(ChallengePlayerActivity.ARG_PARAM_AGE, age);
         extras.putString(ChallengePlayerActivity.ARG_PARAM_EMAIL, email);
         extras.putString(ChallengePlayerActivity.ARG_PARAM_RECORD_0, record_0);
