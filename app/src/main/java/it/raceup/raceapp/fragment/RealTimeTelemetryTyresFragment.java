@@ -17,12 +17,19 @@
 package it.raceup.raceapp.fragment;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.github.lzyzsd.circleprogress.ArcProgress;
 
 import it.raceup.raceapp.R;
+import it.raceup.raceapp.utils.Utils;
+
+import static it.raceup.raceapp.utils.Utils.formatDecimals;
 
 /**
  * Fragment in RealTimeTelemetry activity to show info about tyres
@@ -30,6 +37,7 @@ import it.raceup.raceapp.R;
 
 public class RealTimeTelemetryTyresFragment extends Fragment {
     private static final String TAG = "RealTimeTelemetryTyresFragment";
+    final Handler handler = new Handler();
     private View mFragmentView;
 
     public RealTimeTelemetryTyresFragment() {
@@ -43,6 +51,34 @@ public class RealTimeTelemetryTyresFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mFragmentView = inflater.inflate(R.layout.fragment_real_time_telemetry_tyres, container, false);
+
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    updateValues();
+                    handler.postDelayed(this, 200); // set time here to refresh textView
+                } catch (Exception e) {
+                }
+            }
+        });
+
         return mFragmentView;
+    }
+
+    private void updateValues() {
+        double throttle = Utils.randomInRange(35, 95);
+        double brake = 100.0 - throttle;
+        double maxBarBrakes = 150.0 * brake / 100.0;
+        double[] brakes = Utils.randomsInRange(maxBarBrakes * 0.75, maxBarBrakes, 2);
+
+        ArcProgress arc = getActivity().findViewById(R.id.arc_progress);
+        arc.setProgress((int) throttle);
+
+        TextView view = getActivity().findViewById(R.id.front_brake_button);
+        view.setText(formatDecimals(brakes[0]));
+
+        view = getActivity().findViewById(R.id.rear_brake_button);
+        view.setText(formatDecimals(brakes[1]));
     }
 }

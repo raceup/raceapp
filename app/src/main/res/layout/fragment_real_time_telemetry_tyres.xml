@@ -209,41 +209,6 @@
                     android:textAppearance="?android:attr/textAppearanceSmall" />
             </LinearLayout>
 
-            <!-- temperatures values -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/fr_temperature_value"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="0.5"
-                    android:text="@string/dnf"
-                    android:textAlignment="center"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="0.5"
-                    android:text="@string/tyre_temperature_label"
-                    android:textAlignment="center"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/rr_temperature_value"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="0.5"
-                    android:text="@string/dnf"
-                    android:textAlignment="center"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
-            </LinearLayout>
         </LinearLayout>
 
         <ImageView

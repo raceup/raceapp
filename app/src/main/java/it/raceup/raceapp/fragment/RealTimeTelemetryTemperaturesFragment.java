@@ -52,8 +52,12 @@ public class RealTimeTelemetryTemperaturesFragment extends Fragment {
         handler.post(new Runnable() {
             @Override
             public void run() {
-                updateTemperatures();
-                handler.postDelayed(this, 500); // set time here to refresh textView
+                try {
+                    updateTemperatures();
+                    handler.postDelayed(this, 200); // set time here to refresh textView
+                } catch (Exception e) {
+                }
+
             }
         });
 
@@ -61,7 +65,7 @@ public class RealTimeTelemetryTemperaturesFragment extends Fragment {
     }
 
     private void updateTemperatures() {
-        double[] engines = Utils.randomsInRange(250, 270, 2);
+        double[] engines = Utils.randomsInRange(75, 80, 2);
         double[] tyres = Utils.randomsInRange(90, 100, 4);
 
         TextView view = getActivity().findViewById(R.id.engines_value_0);
