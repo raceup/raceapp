@@ -127,6 +127,7 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/white"
                 android:src="@drawable/ic_alert_octagram_black_24dp" />
+
         </LinearLayout>
 
         <ImageView

@@ -16,7 +16,6 @@
 
 package it.raceup.raceapp.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -27,6 +26,8 @@ import android.view.MenuItem;
 
 import it.raceup.raceapp.R;
 import it.raceup.raceapp.adapter.RealTimeTelemetryPagerAdapter;
+
+import static it.raceup.raceapp.utils.Utils.openActivityByClass;
 
 /**
  * Tabbed activity with real-time data
@@ -71,14 +72,9 @@ public class RealTimeTelemetryActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            openSettingsActivity();
+            openActivityByClass(RealTimeTelemetryActivity.this, SettingsActivity.class);
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private void openSettingsActivity() {
-        Intent openActivity = new Intent(RealTimeTelemetryActivity.this, SettingsActivity.class);
-        startActivity(openActivity);
     }
 }

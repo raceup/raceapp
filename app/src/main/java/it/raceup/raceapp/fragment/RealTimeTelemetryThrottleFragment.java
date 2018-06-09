@@ -25,22 +25,25 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.github.lzyzsd.circleprogress.ArcProgress;
+
 import it.raceup.raceapp.R;
+import it.raceup.raceapp.activity.HelpActivity;
 import it.raceup.raceapp.utils.Utils;
 
 import static it.raceup.raceapp.utils.Utils.formatDecimals;
+import static it.raceup.raceapp.utils.Utils.openActivityByClass;
 
 /**
- * Fragment in RealTimeTelemetry activity to show info about throttle/brakes and steering
+ * Fragment in RealTimeTelemetry activity to show info about tyres
  */
 
 public class RealTimeTelemetryThrottleFragment extends Fragment {
-    final Handler handler = new Handler();
     private static final String TAG = "RealTimeTelemetryThrottleFragment";
-    private View mFragmentView;
+    final Handler handler = new Handler();
 
     public RealTimeTelemetryThrottleFragment() {
-        // Required empty public constructor
+        //
     }
 
     public void onCreate(Bundle savedInstanceState) {
@@ -49,14 +52,15 @@ public class RealTimeTelemetryThrottleFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mFragmentView = inflater.inflate(R.layout.fragment_real_time_telemetry_throttle, container, false);
-        setupButton();
-
+        View mFragmentView = inflater.inflate(R.layout.fragment_real_time_telemetry_throttle, container, false);
         handler.post(new Runnable() {
             @Override
             public void run() {
-                updateValues();
-                handler.postDelayed(this, 200); // set time here to refresh textView
+                try {
+                    updateValues();
+                    handler.postDelayed(this, 200); // set time here to refresh textView
+                } catch (Exception e) {
+                }
             }
         });
 
@@ -74,68 +78,24 @@ public class RealTimeTelemetryThrottleFragment extends Fragment {
     }
 
     private void openHelpActivity() {
-        //
+        openActivityByClass(getContext(), HelpActivity.class);
     }
 
     private void updateValues() {
-        double suspensions[] = Utils.randomsInRange(-25, 25, 4);
-        double speeds[] = Utils.randomsInRange(10, 15, 4);
-        double wb[] = Utils.randomsInRange(85, 95, 4);
-        double ti[] = Utils.randomsInRange(55, 65, 4);
+        setupButton();  // todo move in setup
 
-        // front left
-        TextView view = getActivity().findViewById(R.id.fl_suspension_value);
-        view.setText(formatDecimals(suspensions[0]));
+        double throttle = Utils.randomInRange(35, 95);
+        double brake = 100.0 - throttle;
+        double maxBarBrakes = 150.0 * brake / 100.0;
+        double[] brakes = Utils.randomsInRange(maxBarBrakes * 0.75, maxBarBrakes, 2);
 
-        view = getActivity().findViewById(R.id.fl_speed_value);
-        view.setText(formatDecimals(speeds[0]));
+        ArcProgress arc = getActivity().findViewById(R.id.arc_progress);
+        arc.setProgress((int) throttle);
 
-        view = getActivity().findViewById(R.id.fl_water_block_value);
-        view.setText(formatDecimals(wb[0]));
+        TextView view = getActivity().findViewById(R.id.front_brake_button);
+        view.setText(formatDecimals(brakes[0]));
 
-        view = getActivity().findViewById(R.id.fl_ti_value);
-        view.setText(formatDecimals(ti[0]));
-
-
-        // front right
-        view = getActivity().findViewById(R.id.fr_suspension_value);
-        view.setText(formatDecimals(suspensions[1]));
-
-        view = getActivity().findViewById(R.id.fr_speed_value);
-        view.setText(formatDecimals(speeds[1]));
-
-        view = getActivity().findViewById(R.id.fr_water_block_value);
-        view.setText(formatDecimals(wb[1]));
-
-        view = getActivity().findViewById(R.id.fr_ti_value);
-        view.setText(formatDecimals(ti[1]));
-
-
-        // rear left
-        view = getActivity().findViewById(R.id.rl_suspension_value);
-        view.setText(formatDecimals(suspensions[2]));
-
-        view = getActivity().findViewById(R.id.rl_speed_value);
-        view.setText(formatDecimals(speeds[2]));
-
-        view = getActivity().findViewById(R.id.rl_water_block_value);
-        view.setText(formatDecimals(wb[2]));
-
-        view = getActivity().findViewById(R.id.rl_ti_value);
-        view.setText(formatDecimals(ti[2]));
-
-
-        // rear right
-        view = getActivity().findViewById(R.id.rr_suspension_value);
-        view.setText(formatDecimals(suspensions[3]));
-
-        view = getActivity().findViewById(R.id.rr_speed_value);
-        view.setText(formatDecimals(speeds[3]));
-
-        view = getActivity().findViewById(R.id.rr_water_block_value);
-        view.setText(formatDecimals(wb[3]));
-
-        view = getActivity().findViewById(R.id.rr_ti_value);
-        view.setText(formatDecimals(ti[3]));
+        view = getActivity().findViewById(R.id.rear_brake_button);
+        view.setText(formatDecimals(brakes[1]));
     }
 }
