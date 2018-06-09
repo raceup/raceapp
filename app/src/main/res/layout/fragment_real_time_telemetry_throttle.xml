@@ -122,7 +122,7 @@
                 android:text="@string/steering_wheel_angle" />
 
             <ImageButton
-                android:id="@+id/ImageButton01"
+                android:id="@+id/alert_button"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/white"

@@ -41,6 +41,8 @@ import android.widget.TextView;
 import it.raceup.raceapp.R;
 import it.raceup.raceapp.dialog.AboutDialog;
 
+import static it.raceup.raceapp.utils.Utils.openActivityByClass;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private static final String TAG = "MainActivity";
@@ -87,7 +89,7 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            openSettingsActivity();
+            openActivityByClass(MainActivity.this, SettingsActivity.class);
         }
 
         return super.onOptionsItemSelected(item);
@@ -102,17 +104,17 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_real_time) {
             Drawable alert = getDrawable(R.drawable.ic_alert_octagram_black_24dp);  // todo color
             item.setIcon(alert);
-            openRealTimeTelemetryActivity();
+            openActivityByClass(MainActivity.this, RealTimeTelemetryActivity.class);
         } else if (id == R.id.nav_community) {
-            openCommunityActivity();
+            openActivityByClass(MainActivity.this, CommunityActivity.class);
         } else if (id == R.id.nav_profile) {
-            openProfileActivity();
+            openActivityByClass(MainActivity.this, ProfileActivity.class);
         } else if (id == R.id.nav_training) {
-            openTrainingActivity();
+            openActivityByClass(MainActivity.this, TrainingActivity.class);
         } else if (id == R.id.nav_webpage) {
             openWebpage("http://www.raceup.it");
         } else if (id == R.id.nav_manage) {
-            openSettingsActivity();
+            openActivityByClass(MainActivity.this, SettingsActivity.class);
         } else if (id == R.id.nav_share) {
             openShareActivity();
         } else if (id == R.id.nav_about) {
@@ -124,32 +126,12 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void openRealTimeTelemetryActivity() {
-        openActivityByClass(RealTimeTelemetryActivity.class);
-    }
-
-    private void openCommunityActivity() {
-        openActivityByClass(CommunityActivity.class);
-    }
-
-    private void openProfileActivity() {
-        openActivityByClass(ProfileActivity.class);
-    }
-
-    private void openTrainingActivity() {
-        openActivityByClass(TrainingActivity.class);
-    }
-
     private void openWebpage(String url) {
         Intent openActivity = new Intent(
                 "android.intent.action.VIEW",
                 Uri.parse(url)
         );
         startActivity(openActivity);
-    }
-
-    private void openSettingsActivity() {
-        openActivityByClass(SettingsActivity.class);
     }
 
     private void openShareActivity() {
@@ -159,11 +141,6 @@ public class MainActivity extends AppCompatActivity
                 "Download it from here: https://github.com/raceup/raceapp/blob/master/app/build/outputs/apk/app-debug.apk?raw=true");
         sendIntent.setType("text/plain");
         startActivity(sendIntent);
-    }
-
-    public void openActivityByClass(Class activityClass) {
-        Intent openActivity = new Intent(MainActivity.this, activityClass);
-        startActivity(openActivity);
     }
 
     private void openAboutDialog() {

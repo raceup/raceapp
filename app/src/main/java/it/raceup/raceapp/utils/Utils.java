@@ -1,5 +1,8 @@
 package it.raceup.raceapp.utils;
 
+import android.content.Context;
+import android.content.Intent;
+
 import java.lang.reflect.Field;
 import java.text.DecimalFormat;
 
@@ -30,5 +33,10 @@ public class Utils {
             e.printStackTrace();
             return -1;
         }
+    }
+
+    public static void openActivityByClass(Context context, Class activityClass) {
+        Intent openActivity = new Intent(context, activityClass);
+        context.startActivity(openActivity);
     }
 }

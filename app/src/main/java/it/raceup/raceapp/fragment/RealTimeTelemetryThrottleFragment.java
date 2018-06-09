@@ -22,6 +22,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import it.raceup.raceapp.R;
@@ -49,6 +50,7 @@ public class RealTimeTelemetryThrottleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mFragmentView = inflater.inflate(R.layout.fragment_real_time_telemetry_throttle, container, false);
+        setupButton();
 
         handler.post(new Runnable() {
             @Override
@@ -59,6 +61,20 @@ public class RealTimeTelemetryThrottleFragment extends Fragment {
         });
 
         return mFragmentView;
+    }
+
+    private void setupButton() {
+        ImageButton button = getActivity().findViewById(R.id.alert_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHelpActivity();
+            }
+        });
+    }
+
+    private void openHelpActivity() {
+        //
     }
 
     private void updateValues() {

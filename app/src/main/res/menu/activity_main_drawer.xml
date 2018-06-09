@@ -33,6 +33,11 @@
                 android:title="@string/action_community" />
 
             <item
+                android:id="@+id/nav_training"
+                android:icon="@drawable/ic_fitness_center_black_24dp"
+                android:title="@string/action_training" />
+
+            <item
                 android:id="@+id/nav_profile"
                 android:icon="@drawable/ic_account_circle_black_24dp"
                 android:title="@string/drawer_menu_profile" />
@@ -41,20 +46,6 @@
                 android:id="@+id/nav_manage"
                 android:icon="@drawable/ic_menu_manage"
                 android:title="@string/action_settings" />
-        </menu>
-    </item>
-
-    <item android:title="@string/nav_competitions">
-        <menu>
-            <item
-                android:id="@+id/nav_challenge"
-                android:icon="@drawable/trophy_variant"
-                android:title="@string/action_challenge" />
-
-            <item
-                android:id="@+id/nav_training"
-                android:icon="@drawable/ic_fitness_center_black_24dp"
-                android:title="@string/action_training" />
         </menu>
     </item>
 
