@@ -23,15 +23,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.TextView;
-
-import com.github.lzyzsd.circleprogress.ArcProgress;
 
 import it.raceup.raceapp.R;
 import it.raceup.raceapp.activity.HelpActivity;
-import it.raceup.raceapp.utils.Utils;
 
-import static it.raceup.raceapp.utils.Utils.formatDecimals;
 import static it.raceup.raceapp.utils.Utils.openActivityByClass;
 
 /**
@@ -52,7 +47,19 @@ public class RealTimeTelemetryThrottleFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_real_time_telemetry_throttle, container, false);
+        View mFragmentView = inflater.inflate(R.layout.fragment_real_time_telemetry_throttle, container, false);
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    setupButton();  // todo move in setup
+                    handler.postDelayed(this, 200); // set time here to refresh textView
+                } catch (Exception e) {
+                }
+            }
+        });
+
+        return mFragmentView;
     }
 
     private void setupButton() {
@@ -67,23 +74,5 @@ public class RealTimeTelemetryThrottleFragment extends Fragment {
 
     private void openHelpActivity() {
         openActivityByClass(getContext(), HelpActivity.class);
-    }
-
-    private void updateValues() {
-        setupButton();  // todo move in setup
-
-        double throttle = Utils.randomInRange(35, 95);
-        double brake = 100.0 - throttle;
-        double maxBarBrakes = 150.0 * brake / 100.0;
-        double[] brakes = Utils.randomsInRange(maxBarBrakes * 0.75, maxBarBrakes, 2);
-
-        ArcProgress arc = getActivity().findViewById(R.id.arc_progress);
-        arc.setProgress((int) throttle);
-
-        TextView view = getActivity().findViewById(R.id.front_brake_button);
-        view.setText(formatDecimals(brakes[0]));
-
-        view = getActivity().findViewById(R.id.rear_brake_button);
-        view.setText(formatDecimals(brakes[1]));
     }
 }
