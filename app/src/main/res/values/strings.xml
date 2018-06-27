@@ -338,35 +338,35 @@
     <!-- training activity -->
     <!-- circuits -->
     <string name="train_title">Select race track</string>
-    <string name="monza_title">Autodromo Nazionale Monza</string>
-    <string name="monza_description">Monza, Italy</string>
-    <string name="monza_record_lap">1:21:046</string>
-    <string name="monza_record_pilot">Rubens Barrichello</string>
+    <string name="pista_azzurra_title">Pista Azzurra</string>
+    <string name="pista_azzurra_description">Venezia, Italy</string>
+    <string name="pista_azzurra_record_lap">1:21:046</string>
+    <string name="pista_azzurra_record_pilot">Rubens Barrichello</string>
 
-    <string name="spa_title">Circuit de Spa-Francorchamps</string>
-    <string name="spa_description">Spa-Francorchamps, Belgium</string>
-    <string name="spa_record_lap">1:46.577</string>
-    <string name="spa_record_pilot">Sebastian Vettel</string>
+    <string name="vallelunga_title">ACI Vallelunga Circuit</string>
+    <string name="vallelunga_description">Roma, Italy</string>
+    <string name="vallelunga_record_lap">1:46.577</string>
+    <string name="vallelunga_record_pilot">Sebastian Vettel</string>
 
-    <string name="abudhabi_title">Yas Marina Circuit</string>
-    <string name="abudhabi_description">Abu Dhabi, United Arab Emirates</string>
-    <string name="abudhabi_record_lap">1:40.279</string>
-    <string name="abudhabi_record_pilot">Sebastian Vettel</string>
+    <string name="aki_title">Arena Karting Indoor</string>
+    <string name="aki_description">Mosangles, Italy</string>
+    <string name="aki_record_lap">1:40.279</string>
+    <string name="aki_record_pilot">Sebastian Vettel</string>
 
-    <string name="monaco_title">Circuit de Monaco</string>
-    <string name="monaco_description">Principauté de Monaco, Monte-Carlo</string>
-    <string name="monaco_record_lap">1:14.820</string>
-    <string name="monaco_record_pilot">Sergio Perez</string>
+    <string name="salentina_title">Pista Salentina</string>
+    <string name="salentina_description">Lecce, Italy</string>
+    <string name="salentina_record_lap">1:14.820</string>
+    <string name="salentina_record_pilot">Sergio Perez</string>
 
-    <string name="hockenheim_title">Hockenheimring Baden-Württember</string>
-    <string name="hockenheim_description">Hockenheim, Germany</string>
-    <string name="hockenheim_record_lap">1:13.780</string>
-    <string name="hockenheim_record_pilot">Kimi Raikkonen</string>
+    <string name="franciacorta_title">Autodromo di Franciacorta</string>
+    <string name="franciacorta_description">Brescia, Italy</string>
+    <string name="franciacorta_record_lap">1:13.780</string>
+    <string name="franciacorta_record_pilot">Kimi Raikkonen</string>
 
-    <string name="silverstone_title">Silverstone Circuit</string>
-    <string name="silverstone_description">Northamptonshire, United Kingdom</string>
-    <string name="silverstone_record_lap">1:30.621</string>
-    <string name="silverstone_record_pilot">Lewis Hamilton</string>
+    <string name="air_title">Adria International Raceway</string>
+    <string name="air_description">Adria, Italy</string>
+    <string name="air_record_lap">1:30.621</string>
+    <string name="air_record_pilot">Lewis Hamilton</string>
 
     <string name="title_activity_our_challenges">RaceUp Challenges</string>
     <string name="title_activity_challenge_player">Challenge a player</string>

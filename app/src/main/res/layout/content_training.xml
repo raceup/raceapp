@@ -78,14 +78,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/monza_title"
+                                android:text="@string/pista_azzurra_title"
                                 android:textSize="@dimen/text_medium"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/monza_description" />
+                                android:text="@string/pista_azzurra_description" />
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -127,14 +127,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/spa_title"
+                                android:text="@string/vallelunga_title"
                                 android:textSize="@dimen/text_medium"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/spa_description" />
+                                android:text="@string/vallelunga_description" />
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -174,14 +174,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/hockenheim_title"
+                                android:text="@string/franciacorta_title"
                                 android:textSize="@dimen/text_medium"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/hockenheim_description" />
+                                android:text="@string/franciacorta_description" />
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -223,14 +223,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/monaco_title"
+                                android:text="@string/salentina_title"
                                 android:textSize="@dimen/text_medium"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/monaco_description" />
+                                android:text="@string/salentina_description" />
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -272,14 +272,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/silverstone_title"
+                                android:text="@string/air_title"
                                 android:textSize="@dimen/text_medium"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/silverstone_description" />
+                                android:text="@string/air_description" />
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -317,14 +317,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/abudhabi_title"
+                                android:text="@string/aki_title"
                                 android:textSize="@dimen/text_medium"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/abudhabi_description" />
+                                android:text="@string/aki_description" />
 
                         </LinearLayout>
                     </RelativeLayout>

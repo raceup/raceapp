@@ -257,7 +257,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/abudhabi_title"
+                            android:text="@string/aki_title"
                             android:textSize="@dimen/text_medium"
                             android:textStyle="bold" />
 
@@ -305,7 +305,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/silverstone_title"
+                            android:text="@string/air_title"
                             android:textSize="@dimen/text_medium"
                             android:textStyle="bold" />
 

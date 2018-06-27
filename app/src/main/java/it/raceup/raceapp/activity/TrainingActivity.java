@@ -32,10 +32,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        getString(R.string.monza_title),
+                        getString(R.string.pista_azzurra_title),
                         R.drawable.monza,
-                        getString(R.string.monza_record_lap),
-                        getString(R.string.monza_record_pilot)
+                        getString(R.string.pista_azzurra_record_lap),
+                        getString(R.string.pista_azzurra_record_pilot)
                 );
             }
         });
@@ -45,10 +45,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        getString(R.string.silverstone_title),
+                        getString(R.string.air_title),
                         R.drawable.spa,
-                        getString(R.string.silverstone_record_lap),
-                        getString(R.string.silverstone_record_pilot)
+                        getString(R.string.air_record_lap),
+                        getString(R.string.air_record_pilot)
                 );
             }
         });
@@ -58,10 +58,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        getString(R.string.hockenheim_title),
+                        getString(R.string.franciacorta_title),
                         R.drawable.hockenheim,
-                        getString(R.string.hockenheim_record_lap),
-                        getString(R.string.hockenheim_record_pilot)
+                        getString(R.string.franciacorta_record_lap),
+                        getString(R.string.franciacorta_record_pilot)
                 );
             }
         });
@@ -71,10 +71,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        getString(R.string.monaco_title),
+                        getString(R.string.salentina_title),
                         R.drawable.monaco,
-                        getString(R.string.monaco_record_lap),
-                        getString(R.string.monaco_record_pilot)
+                        getString(R.string.salentina_record_lap),
+                        getString(R.string.salentina_record_pilot)
                 );
             }
         });
@@ -84,10 +84,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        getString(R.string.abudhabi_title),
+                        getString(R.string.aki_title),
                         R.drawable.abudhabi,
-                        getString(R.string.abudhabi_record_lap),
-                        getString(R.string.abudhabi_record_pilot)
+                        getString(R.string.aki_record_lap),
+                        getString(R.string.aki_record_pilot)
                 );
             }
         });
@@ -97,10 +97,10 @@ TrainingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openTrainingChallengeActivity(
-                        getString(R.string.spa_title),
+                        getString(R.string.vallelunga_title),
                         R.drawable.spa,
-                        getString(R.string.spa_record_lap),
-                        getString(R.string.spa_record_pilot)
+                        getString(R.string.vallelunga_record_lap),
+                        getString(R.string.vallelunga_record_pilot)
                 );
             }
         });
