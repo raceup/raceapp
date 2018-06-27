@@ -54,7 +54,7 @@ public class RealTimeTelemetryTemperaturesFragment extends Fragment {
             public void run() {
                 try {
                     updateTemperatures();
-                    handler.postDelayed(this, 200); // set time here to refresh textView
+                    handler.postDelayed(this, 1000); // set time here to refresh textView
                 } catch (Exception e) {
                 }
 
@@ -65,8 +65,8 @@ public class RealTimeTelemetryTemperaturesFragment extends Fragment {
     }
 
     private void updateTemperatures() {
-        double[] engines = Utils.randomsInRange(75, 80, 2);
-        double[] tyres = Utils.randomsInRange(90, 100, 4);
+        double[] engines = Utils.randomsInRange(75, 77, 2);
+        double[] tyres = Utils.randomsInRange(90, 92, 4);
 
         TextView view = getActivity().findViewById(R.id.engines_value_0);
         view.setText(formatDecimals(engines[0]));

@@ -52,19 +52,7 @@ public class RealTimeTelemetryThrottleFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View mFragmentView = inflater.inflate(R.layout.fragment_real_time_telemetry_throttle, container, false);
-        handler.post(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    updateValues();
-                    handler.postDelayed(this, 200); // set time here to refresh textView
-                } catch (Exception e) {
-                }
-            }
-        });
-
-        return mFragmentView;
+        return inflater.inflate(R.layout.fragment_real_time_telemetry_throttle, container, false);
     }
 
     private void setupButton() {

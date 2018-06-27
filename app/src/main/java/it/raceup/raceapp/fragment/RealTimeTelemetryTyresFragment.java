@@ -53,7 +53,7 @@ public class RealTimeTelemetryTyresFragment extends Fragment {
             public void run() {
                 try {
                     updateValues();
-                    handler.postDelayed(this, 200); // set time here to refresh textView
+                    handler.postDelayed(this, 1000); // set time here to refresh textView
                 } catch (Exception e) {
                 }
             }
@@ -63,19 +63,11 @@ public class RealTimeTelemetryTyresFragment extends Fragment {
     }
 
     private void updateValues() {
-        double suspensions[] = Utils.randomsInRange(-25, 25, 4);
-        double speeds[] = Utils.randomsInRange(10, 15, 4);
-        double wb[] = Utils.randomsInRange(85, 95, 4);
-        double ti[] = Utils.randomsInRange(55, 65, 4);
+        double wb[] = Utils.randomsInRange(85, 87, 4);
+        double ti[] = Utils.randomsInRange(55, 56, 4);
 
         // front left
-        TextView view = getActivity().findViewById(R.id.fl_suspension_value);
-        view.setText(formatDecimals(suspensions[0]));
-
-        view = getActivity().findViewById(R.id.fl_speed_value);
-        view.setText(formatDecimals(speeds[0]));
-
-        view = getActivity().findViewById(R.id.fl_water_block_value);
+        TextView view = getActivity().findViewById(R.id.fl_water_block_value);
         view.setText(formatDecimals(wb[0]));
 
         view = getActivity().findViewById(R.id.fl_ti_value);
@@ -83,12 +75,6 @@ public class RealTimeTelemetryTyresFragment extends Fragment {
 
 
         // front right
-        view = getActivity().findViewById(R.id.fr_suspension_value);
-        view.setText(formatDecimals(suspensions[1]));
-
-        view = getActivity().findViewById(R.id.fr_speed_value);
-        view.setText(formatDecimals(speeds[1]));
-
         view = getActivity().findViewById(R.id.fr_water_block_value);
         view.setText(formatDecimals(wb[1]));
 
@@ -97,12 +83,6 @@ public class RealTimeTelemetryTyresFragment extends Fragment {
 
 
         // rear left
-        view = getActivity().findViewById(R.id.rl_suspension_value);
-        view.setText(formatDecimals(suspensions[2]));
-
-        view = getActivity().findViewById(R.id.rl_speed_value);
-        view.setText(formatDecimals(speeds[2]));
-
         view = getActivity().findViewById(R.id.rl_water_block_value);
         view.setText(formatDecimals(wb[2]));
 
@@ -111,12 +91,6 @@ public class RealTimeTelemetryTyresFragment extends Fragment {
 
 
         // rear right
-        view = getActivity().findViewById(R.id.rr_suspension_value);
-        view.setText(formatDecimals(suspensions[3]));
-
-        view = getActivity().findViewById(R.id.rr_speed_value);
-        view.setText(formatDecimals(speeds[3]));
-
         view = getActivity().findViewById(R.id.rr_water_block_value);
         view.setText(formatDecimals(wb[3]));
 
