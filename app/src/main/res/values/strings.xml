@@ -69,18 +69,18 @@
 
     <!-- people -->
     <string name="eleonora">Eleonora Venturini</string>
-    <string name="eleonora_spa">Venturini Racing</string>
+    <string name="eleonora_spa">Venturini S.R.L</string>
     <string name="eleonora_age">22 years</string>
-    <string name="eleonora_email">ele.venturini@raceup.it</string>
-    <string name="eleonora_career_record_monza">Autodromo Nazionale Monza - 1:47.020 (2nd)</string>
-    <string name="eleonora_career_record_spa">Circuit de Spa-Francorchamps - 2:17.020 (4th)</string>
+    <string name="eleonora_email">ele.venturini@venturinisrl.it</string>
+    <string name="eleonora_career_record_monza">ACI Vallelunga Circuit - 1:47.020 (2nd)</string>
+    <string name="eleonora_career_record_spa">Autodromo di Franciacorta - 2:17.020 (4th)</string>
 
     <string name="jacopo">Jacopo Pregnolato</string>
-    <string name="jacopo_spa">Pregnolato Racing</string>
+    <string name="jacopo_spa">Pregnolato S.P.A</string>
     <string name="jacopo_age">20 years</string>
-    <string name="jacopo_email">jac.pregnolato@raceup.it</string>
-    <string name="jacopo_career_record_monza">Autodromo Nazionale Monza - 1:39.122 (1st)</string>
-    <string name="jacopo_career_record_spa">Circuit de Spa-Francorchamps - 1:59.280 (2nd)</string>
+    <string name="jacopo_email">jac.pregnolato@pregnolatospa.it</string>
+    <string name="jacopo_career_record_monza">Adria International Raceway - 1:39.122 (1st)</string>
+    <string name="jacopo_career_record_spa">Pista Azzurra - 1:59.280 (2nd)</string>
 
     <!-- cached-data telemetry activity -->
     <string name="cached_data_activity_title">Cached data</string>
@@ -296,9 +296,9 @@
     <string name="packet_loss_rate">5.6%</string>
     <string name="good_car_status">Good</string>
     <string name="car_errors">16</string>
-    <string name="logged_user">Miss Chiara Vilnai</string>
-    <string name="logged_email">chiara@raceup.it</string>
-    <string name="user_org">Race UP</string>
+    <string name="logged_user">Chiara Brancaleone</string>
+    <string name="logged_email">chiara@nrgmotorsport.it</string>
+    <string name="user_org">NRG Motorosport S.R.L</string>
     <string name="navbar_header_description">Navigation bar header</string>
     <string name="title_activity_profile">Profile</string>
     <string name="user_record_monza">1:42:899</string>

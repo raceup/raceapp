@@ -65,7 +65,6 @@
                     android:text="Business"
                     android:textStyle="bold" />
 
-
                 <TextView
                     android:id="@+id/text_spa"
                     android:layout_width="match_parent"
@@ -75,6 +74,21 @@
                     android:id="@+id/text_email"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sector: Architecture" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="(39) 442-1198" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Viale dell\'industria e dell\'artigianato 29, Roma, Italy" />
 
             </LinearLayout>
 
