@@ -122,6 +122,7 @@
             android:background="@color/colorAccent"
             android:text="@string/start_challenge"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
             android:textStyle="bold" />
 

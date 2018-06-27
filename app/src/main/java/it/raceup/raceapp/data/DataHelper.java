@@ -28,7 +28,7 @@ import java.util.List;
 public class DataHelper {
     private static List<ColorSuggestion> sColorSuggestions =
             new ArrayList<>(Arrays.asList(
-                    new ColorSuggestion("Eleonora Milesi"),
+                    new ColorSuggestion("Eleonora Venturini"),
                     new ColorSuggestion("Jacopo Pregnolato"),
                     new ColorSuggestion("Felice Nappo")));
 
