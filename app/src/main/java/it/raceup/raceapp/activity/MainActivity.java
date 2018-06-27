@@ -35,6 +35,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import it.raceup.raceapp.R;
@@ -60,6 +61,16 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    private void setup() {
+        Button button = findViewById(R.id.start_challenge);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTrainingActivity();
+            }
+        });
     }
 
     @Override
@@ -109,7 +120,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_profile) {
             openActivityByClass(MainActivity.this, ProfileActivity.class);
         } else if (id == R.id.nav_training) {
-            openActivityByClass(MainActivity.this, TrainingActivity.class);
+            openTrainingActivity();
         } else if (id == R.id.nav_webpage) {
             openWebpage("http://www.raceup.it");
         } else if (id == R.id.nav_manage) {
@@ -171,5 +182,9 @@ public class MainActivity extends AppCompatActivity
         } catch (Exception e) {
             // todo get current view showToastMessage("Ooops! Cannot open the about dialog!");
         }
+    }
+
+    private void openTrainingActivity() {
+        openActivityByClass(MainActivity.this, TrainingActivity.class);
     }
 }

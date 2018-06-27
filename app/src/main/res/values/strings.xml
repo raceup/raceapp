@@ -376,4 +376,7 @@
     <string name="start_challenge_now">CHALLENGE NOW</string>
     <string name="title_activity_new_challenge">Select challenge</string>
     <string name="title_activity_help">Contact assistance</string>
+    <string name="connected">Connected</string>
+    <string name="n_players">Players on track</string>
+    <string name="new_race">START A NEW RACE</string>
 </resources>

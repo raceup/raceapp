@@ -31,6 +31,12 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin">
 
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/logo" />
+
         <!-- status -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,61 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0.5"
-                android:text="@string/not_connected"
-                android:textAlignment="center"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
-        </LinearLayout>
-
-        <!-- telemetry source -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="@dimen/activity_vertical_margin">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:text="@string/main_telemetry_source"
-                android:textAlignment="center"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/telemetry_source_button"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:text="@string/telemetry_choice_wifi"
-                android:textAlignment="center"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
-        </LinearLayout>
-
-        <!-- packet loss -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="@dimen/activity_vertical_margin">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:text="@string/main_packet_lost"
-                android:textAlignment="center"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/packet_lost"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:text="@string/packet_loss_rate"
+                android:text="@string/connected"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
         </LinearLayout>
@@ -152,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0.5"
-                android:text="@string/main_car_errors"
+                android:text="@string/n_players"
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
@@ -162,9 +114,22 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0.5"
-                android:text="@string/car_errors"
+                android:text="14"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/start_challenge"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorAccent"
+            android:text="@string/new_race"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>

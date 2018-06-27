@@ -25,6 +25,7 @@ public class ChallengePlayerActivity extends AppCompatActivity {
     private String name, industry, age, email, record_0, record_1;
     private int profileImage, industryImage;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
