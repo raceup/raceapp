@@ -45,11 +45,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+import it.raceup.raceapp.BuildConfig;
 import it.raceup.raceapp.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
+import static it.raceup.raceapp.utils.Utils.getBuildVersion;
 
 /**
  * A login screen that offers login via email/password.
@@ -109,6 +112,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+        setup();
+    }
+
+    private void setup() {
+        Date buildDate = new Date(BuildConfig.TIMESTAMP);
+        TextView view = findViewById(R.id.build_timestamp);
+        Long buildTime = buildDate.getTime();  // todo build points
+        view.setText("v" + getBuildVersion(buildTime));
     }
 
     private void populateAutoComplete() {
