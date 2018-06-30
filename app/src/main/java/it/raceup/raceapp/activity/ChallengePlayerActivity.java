@@ -62,8 +62,8 @@ public class ChallengePlayerActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.text_name);
         textView.setText(name);
 
-        textView = findViewById(R.id.text_age);
-        textView.setText(age);
+        // todo textView = findViewById(R.id.text_age);
+        // textView.setText(age);
 
         textView = findViewById(R.id.text_spa);
         textView.setText(industry);
@@ -80,8 +80,8 @@ public class ChallengePlayerActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.icon_profile);
         imageView.setImageDrawable(getDrawable(profileImage));
 
-        imageView = findViewById(R.id.icon_business);
-        imageView.setImageDrawable(getDrawable(industryImage));
+        // todo imageView = findViewById(R.id.icon_business);
+        // imageView.setImageDrawable(getDrawable(industryImage));
     }
 
     private void openNewChallengeActivity() {

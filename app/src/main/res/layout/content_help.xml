@@ -155,6 +155,7 @@
             android:layout_weight="0.5"
             android:background="@color/colorAccent"
             android:text="CONTACT ASSISTANCE"
+            android:textColor="@android:color/white"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
             android:textStyle="bold" />

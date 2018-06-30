@@ -16,6 +16,8 @@
 
         <TextView
             android:id="@+id/circuit"
+            android:textSize="24dp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center" />
@@ -73,6 +75,7 @@
             android:layout_marginTop="20dp"
             android:layout_weight="0.5"
             android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
             android:text="@string/start_challenge_invitation"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
@@ -86,6 +89,7 @@
             android:layout_marginTop="20dp"
             android:layout_weight="0.5"
             android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
             android:text="@string/start_challenge_now"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
