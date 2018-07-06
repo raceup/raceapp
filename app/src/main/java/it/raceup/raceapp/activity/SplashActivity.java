@@ -14,7 +14,7 @@ import it.raceup.raceapp.R;
 import static it.raceup.raceapp.utils.Utils.getBuildVersion;
 
 public class SplashActivity extends AppCompatActivity {
-    private final int SPLASH_DISPLAY_LENGTH = 1500;  // duration of wait (ms)
+    private final int SPLASH_DISPLAY_LENGTH = 2500;  // duration of wait (ms)
 
     /**
      * Called when the activity is first created.
